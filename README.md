@@ -1,4 +1,4 @@
-# Documentação do aplicativo = simulador de churrasco python
+# Documentação do aplicativo - Simulador de churrasco python
 
 # Introdução
 
