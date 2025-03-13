@@ -11,17 +11,27 @@ print("Calculadora de churrasco em familia ")
 print("=-="*30)
 
 # identificar a quantidade de pessoas na festa
-
-homens = 0 
-mulheres = 0 
+homens = 0
+mulheres = 0
 criancas = 0
-homens =+ int(input("Digite a quantidades de homens que haverá na festa: "))
 
-mulheres =+ int(input("Digite a quantidades de mulheres que haverá na festa: "))
+# Laço de repetição que verifica se foi realmente colocado numeros no lugares corretos
+while True:
+  try:
+   
+    homens =+ int(input("Digite a quantidades de homens que haverá na festa: "))
 
-criancas =+ int(input("Digite a quantidades de crianças que haverá na festa: "))
+    mulheres =+ int(input("Digite a quantidades de mulheres que haverá na festa: "))
 
+    criancas =+ int(input("Digite a quantidades de crianças que haverá na festa: "))
 
+    if homens < 0 or mulheres < 0 or criancas < 0:
+      raise ValueError
+      
+  except ValueError:
+    print("Digite valores Validos")
+  else:
+    break
 
 # calculos
 
